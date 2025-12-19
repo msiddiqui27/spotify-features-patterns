@@ -229,11 +229,11 @@ def show_artist_signatures(df):
 
         #keep genre counts consistent with the deduped definition of songs
         genre_counts = (
-            deduped.groupby("genre")
-            .agg(Songs=("song", "count"), Avg_Popularity=("popularity", "mean"))
-            .reset_index()
-            .sort_values("Songs", ascending=False)
-        )
+        artist_data.groupby("genre")
+        .agg(Songs=("song", "nunique"), Avg_Popularity=("popularity", "mean"))
+        .reset_index()
+        .sort_values("Songs", ascending=False)
+    )
 
         fig = px.bar(
             genre_counts,
