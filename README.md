@@ -6,8 +6,6 @@ This project explores how popular music appears when sound is encoded through Sp
 
 Rather than evaluating musical quality or listener preference, the analysis focuses on how **platform-defined audio features** structure what becomes legible, comparable, and visible at scale.
 
----
-
 ## Conceptual Framework
 
 This project is informed by:
