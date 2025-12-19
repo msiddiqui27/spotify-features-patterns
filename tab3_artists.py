@@ -135,7 +135,7 @@ def show_artist_signatures(df):
         with c1:
             st.metric("Songs", deduped.shape[0])
         with c2:
-            st.metric("Genres", deduped["genre"].nunique())
+            st.metric("Genres", artist_data["genre"].nunique())
         with c3:
             st.metric("Avg Popularity", f"{deduped['popularity'].mean():.0f}")
         with c4:
